@@ -1,1 +1,1 @@
-"# feladatkezel‚s , fi¢k kezel‚s n‚lkl" 
+"# feladatkezelÃ©s kÃ©sz, fiÃ³k kezelÃ©s nincs" 
