@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block tartalom %}
+      <div>
+            <h2>{{ todo.nev }}</h2>
+      </div>
+
+      <div>
+            <strong>Státusz: {{ todo.allapot }}</strong>
+            <br>  
+            <strong>Leiras</strong>{{ todo.leiras }}
+      </div>
+
+      {% if not todo.allapot %}
+            <div>
+                  <a href="{% url "td" todo.id %}?change_status=done">Megjelülés készként</a>
+            </div>
+      {% endif %}
+
+{% endblock tartalom %}

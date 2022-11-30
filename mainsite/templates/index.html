@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block tartalom %} 
+<div>
+      <h3>Feladatok</h3>
+
+      <form method="post">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+            <input type="submit" value="Mentés">
+      </form>
+
+      {% for i in todos %}
+            <p>{{ i.nev }} (Készvan? : {{ i.allapot }})<a href="{% url "td" i.id %}">Megtekintés</a></p>
+            {% empty %}
+                  <p>Nincs feladatod</p>
+                  
+      {% endfor %}
+</div>
+{% endblock tartalom %}

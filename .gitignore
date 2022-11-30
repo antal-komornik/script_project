@@ -1,0 +1,7 @@
+.idea/
+mainsite/migrations/
+_core/
+mainsite/__init__.py
+db.sqlite3
+mainsite/tests.py
+manage.py
